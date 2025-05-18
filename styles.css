@@ -100,3 +100,21 @@ body {
   color: white;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .modal-content {
+      flex-direction: column; /* Stack on mobile */
+      margin: 25% auto; /* Adjust position if needed */
+  }
+
+  .modal-info {
+      padding: 10px;
+  }
+
+  .modal-info h2 {
+      font-size: 1.5em;
+  }
+
+  .modal-info p {
+      font-size: 0.9em;
+  }
+}

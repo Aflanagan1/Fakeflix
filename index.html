@@ -18,12 +18,16 @@
     </nav>
 
     <!-- Carrusel superior -->
-    <div id="netflixCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="netflixCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="position: relative; height: 600px; overflow: hidden;">
+          <div id="movieInfo" style="position: absolute; top: 150px; left: 20px; color: white; z-index: 10; padding: 15px; max-width: 28%;">
+            <h2 style="margin-top: 0; margin-bottom: 5px; font-size: 2em;">Ant-Man</h2>
+            <p style="line-height: 1.4; margin-bottom: 0; font-size: 1em;">Un ladrón de poca monta adquiere la asombrosa capacidad de reducir su tamaño a la vez que aumenta su fuerza. Deberá abrazar su héroe interior para ayudar a su mentor a salvar al mundo de una gran amenaza.</p>
+          </div>
           <iframe
             width="100%"
-            height="600px"
+            height="100%"
             src="https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
             title="Trailer Ant-man"
             allow="autoplay; encrypted-media"
@@ -31,25 +35,35 @@
           ></iframe>
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item" style="position: relative; height: 600px; overflow: hidden;">
+          <div id="movieInfoAvatar" style="position: absolute; top: 150px; left: 20px; color: white; z-index: 10; padding: 15px; max-width: 28%;">
+            <h2 style="margin-top: 0; margin-bottom: 5px; font-size: 2em;">Avatar</h2>
+            <p style="line-height: 1.4; margin-bottom: 0; font-size: 1em;">Un ex-marine parapléjico es enviado al planeta Pandora en una misión única, donde se debate entre seguir sus órdenes y proteger el mundo que siente como su hogar.</p>
+          </div>
           <iframe
             width="100%"
-            height="600px"
+            height="100%"
             src="https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
             title="Trailer Avatar"
             frameborder="0"
             allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
           ></iframe>
         </div>
-
-        <div class="carousel-item">
+      
+        <div class="carousel-item" style="position: relative; height: 600px; overflow: hidden;">
+          <div id="movieInfoDune" style="position: absolute; top: 150px; left: 20px; color: white; z-index: 10; padding: 15px; max-width: 28%;">
+            <h2 style="margin-top: 0; margin-bottom: 5px; font-size: 2em;">Dune</h2>
+            <p style="line-height: 1.4; margin-bottom: 0; font-size: 1em;">El hijo talentoso de una familia noble debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y de su pueblo.</p>
+          </div>
           <iframe
             width="100%"
-            height="600px"
+            height="100%"
             src="https://www.youtube.com/embed/TTgk_iT8Uts?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
             title="Trailer Dune"
             frameborder="0"
             allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
           ></iframe>
         </div>
       </div>
@@ -147,34 +161,34 @@
 
       <h4 class="mt-4">Series</h4>
       <div class="scrolling-wrapper">
-        <img class="card" src="imagenes/series/Alive.jpg" />
-        <img class="card" src="imagenes/series/Arcane.jpg" />
-        <img class="card" src="imagenes/series/blinders.jpg" />
-        <img class="card" src="imagenes/series/Dark.jpg" />
-        <img class="card" src="imagenes/series/friends.jpg" />
-        <img class="card" src="imagenes/series/gambito.jpg" />
-        <img class="card" src="imagenes/series/Los100.jpg" />
-        <img class="card" src="imagenes/series/Squid.jpg" />
-        <img class="card" src="imagenes/series/strangers.jpg" />
-        <img class="card" src="imagenes/series/Tronos.jpg" />
-        <img class="card" src="imagenes/series/walking.jpg" />
-        <img class="card" src="imagenes/series/Witcher.jpg" />
+        <img class="card" src="imagenes/series/Alive.jpg" onclick="openModal('modal13')"/>
+        <img class="card" src="imagenes/series/Arcane.jpg" onclick="openModal('modal14')"/>
+        <img class="card" src="imagenes/series/blinders.jpg" onclick="openModal('modal15')"/>
+        <img class="card" src="imagenes/series/Dark.jpg" onclick="openModal('modal16')"/>
+        <img class="card" src="imagenes/series/friends.jpg" onclick="openModal('modal17')"/>
+        <img class="card" src="imagenes/series/gambito.jpg" onclick="openModal('modal18')"/>
+        <img class="card" src="imagenes/series/Los100.jpg" onclick="openModal('modal19')"/>
+        <img class="card" src="imagenes/series/Squid.jpg" onclick="openModal('modal20')"/>
+        <img class="card" src="imagenes/series/strangers.jpg" onclick="openModal('modal21')"/>
+        <img class="card" src="imagenes/series/Tronos.jpg" onclick="openModal('modal22')"/>
+        <img class="card" src="imagenes/series/walking.jpg" onclick="openModal('modal23')"/>
+        <img class="card" src="imagenes/series/Witcher.jpg" onclick="openModal('modal24')"/>
       </div>
 
       <h4 class="mt-4">Un poco de realidad</h4>
       <div class="scrolling-wrapper">
-        <img class="card" src="imagenes/reallity/camp.jpg" />
-        <img class="card" src="imagenes/reallity/circle.jpg" />
-        <img class="card" src="imagenes/reallity/fakes.jpg" />
-        <img class="card" src="imagenes/reallity/georgina.jpg" />
-        <img class="card" src="imagenes/reallity/home.jpg" />
-        <img class="card" src="imagenes/reallity/hot.jpg" />
-        <img class="card" src="imagenes/reallity/match.jpg" />
-        <img class="card" src="imagenes/reallity/mole.jpg" />
-        <img class="card" src="imagenes/reallity/perfect.jpg" />
-        <img class="card" src="imagenes/reallity/quereye.jpg" />
-        <img class="card" src="imagenes/reallity/sunset.jpg" />
-        <img class="card" src="imagenes/reallity/Unreal.jpg" />
+        <img class="card" src="imagenes/reallity/camp.jpg" onclick="openModal('modal25')"/>
+<img class="card" src="imagenes/reallity/circle.jpg" onclick="openModal('modal26')"/>
+<img class="card" src="imagenes/reallity/fakes.jpg" onclick="openModal('modal27')"/>
+<img class="card" src="imagenes/reallity/georgina.jpg" onclick="openModal('modal28')"/>
+<img class="card" src="imagenes/reallity/home.jpg" onclick="openModal('modal29')"/>
+<img class="card" src="imagenes/reallity/hot.jpg" onclick="openModal('modal30')"/>
+<img class="card" src="imagenes/reallity/match.jpg" onclick="openModal('modal31')"/>
+<img class="card" src="imagenes/reallity/mole.jpg" onclick="openModal('modal32')"/>
+<img class="card" src="imagenes/reallity/perfect.jpg" onclick="openModal('modal33')"/>
+<img class="card" src="imagenes/reallity/quereye.jpg" onclick="openModal('modal34')"/>
+<img class="card" src="imagenes/reallity/sunset.jpg" onclick="openModal('modal35')"/>
+<img class="card" src="imagenes/reallity/Unreal.jpg" onclick="openModal('modal36')"/>
       </div>
     </div>
     <!-- Modal1 -->
@@ -536,32 +550,650 @@
     <!-- Modal13 -->
     <div id="modal13" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <img src="imagenes/avengers.jpg" alt="Poster" class="modal-img" />
-        <div class="modal-info">
-          <h2>Avengers: Endgame</h2>
-          <p><strong>Año:</strong> 2019 · <strong>Duración:</strong> 3h 2min</p>
-          <p><strong>Clasificación:</strong> 13+</p>
-          <p>
-            Thanos ha destruido el universo, y los Vengadores deben reunir
-            fuerzas para revertirlo.
-          </p>
-          <p>
-            <strong>Reparto:</strong> Robert Downey Jr., Chris Evans, Scarlett
-            Johansson
-          </p>
-          <p><strong>Géneros:</strong> Ciencia ficción, Acción</p>
-          <iframe
-            width="100%"
-            height="250"
-            src="https://www.youtube.com/embed/TcMBFSGVi1c"
-            title="Avengers Trailer"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+          <span class="close" onclick="closeModal('modal13')">×</span>
+          <img src="imagenes/series/Alive.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Alive</h2>
+              <p><strong>Año:</strong> 2020 · <strong>Duración:</strong> 1 temporada (aprox. 45-60 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  Un misterioso brote comienza a propagarse rápidamente por toda la ciudad, haciendo que las personas pierdan el control y ataquen brutalmente a otros. Un joven intenta sobrevivir aislado en su apartamento.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Ahn Jae-hong, Park Shin-hye, Kim Joo-young
+              </p>
+              <p><strong>Géneros:</strong> Drama, Terror</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Alive]"
+                  title="Alive Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
       </div>
+  </div>
+  
+  <div id="modal14" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">×</span>
+          <img src="imagenes/series/Arcane.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Arcane</h2>
+              <p><strong>Año:</strong> 2021-presente · <strong>Duración:</strong> 1 temporada (aprox. 40 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 13+</p>
+              <p>
+                  Ambientada en la próspera región de Piltover y el oprimido distrito subterráneo de Zaun, la historia sigue los orígenes de dos campeonas de League of Legends y el poder que las destrozará.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Hailee Steinfeld, Ella Purnell, Katie Leung
+              </p>
+              <p><strong>Géneros:</strong> Animación, Acción, Aventura</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Arcane]"
+                  title="Arcane Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal15" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">×</span>
+          <img src="imagenes/series/blinders.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Peaky Blinders</h2>
+              <p><strong>Año:</strong> 2013-2022 · <strong>Duración:</strong> 6 temporadas (aprox. 50-60 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  Una saga familiar de gánsteres ambientada en Birmingham, Inglaterra, después de la Primera Guerra Mundial, centrada en la ambiciosa banda de los Peaky Blinders y su astuto líder, Tommy Shelby.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Cillian Murphy, Helen McCrory, Paul Anderson
+              </p>
+              <p><strong>Géneros:</strong> Drama, Crimen</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Peaky Blinders]"
+                  title="Peaky Blinders Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal16" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">×</span>
+          <img src="imagenes/series/Dark.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Dark</h2>
+              <p><strong>Año:</strong> 2017-2020 · <strong>Duración:</strong> 3 temporadas (aprox. 45-60 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 16+</p>
+              <p>
+                  La desaparición de dos niños en la pequeña ciudad alemana de Winden revela oscuros secretos y complejas conexiones entre cuatro familias a lo largo de múltiples líneas de tiempo.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Louis Hofmann, Oliver Masucci, Jördis Triebel
+              </p>
+              <p><strong>Géneros:</strong> Ciencia ficción, Thriller, Drama</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Dark]"
+                  title="Dark Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal17" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">×</span>
+          <img src="imagenes/series/friends.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Friends</h2>
+              <p><strong>Año:</strong> 1994-2004 · <strong>Duración:</strong> 10 temporadas (aprox. 22 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 13+</p>
+              <p>
+                  Las hilarantes y conmovedoras vidas de seis jóvenes amigos que viven en la ciudad de Nueva York, lidiando con el trabajo, el amor y la amistad.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer
+              </p>
+              <p><strong>Géneros:</strong> Comedia, Romance</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Friends]"
+                  title="Friends Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal18" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">×</span>
+          <img src="imagenes/series/gambito.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Gambito de Dama</h2>
+              <p><strong>Año:</strong> 2020 · <strong>Duración:</strong> Miniserie (7 episodios, aprox. 45-68 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 16+</p>
+              <p>
+                  En los años 50, una joven huérfana con un talento prodigioso para el ajedrez lucha contra la adicción mientras asciende en el competitivo mundo del ajedrez.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Anya Taylor-Joy, Bill Camp, Marielle Heller
+              </p>
+              <p><strong>Géneros:</strong> Drama</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Gambito de Dama]"
+                  title="Gambito de Dama Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal19" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal19')">×</span>
+          <img src="imagenes/series/Los100.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Los 100</h2>
+              <p><strong>Año:</strong> 2014-2020 · <strong>Duración:</strong> 7 temporadas (aprox. 42 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 16+</p>
+              <p>
+                  Casi cien años después de una devastadora guerra nuclear, cien jóvenes delincuentes son enviados de vuelta a la Tierra para determinar si el planeta es habitable.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Eliza Taylor, Bob Morley, Marie Avgeropoulos
+              </p>
+              <p><strong>Géneros:</strong> Ciencia ficción, Drama, Aventura</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Los 100]"
+                  title="Los 100 Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal20" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">×</span>
+          <img src="imagenes/series/Squid.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Squid Game</h2>
+              <p><strong>Año:</strong> 2021-presente · <strong>Duración:</strong> 1 temporada (aprox. 32-63 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  Cientos de personas con problemas económicos son invitadas a participar en una serie de juegos infantiles mortales con la promesa de una gran suma de dinero.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Lee Jung-jae, Park Hae-soo, Wi Ha-joon
+              </p>
+              <p><strong>Géneros:</strong> Thriller, Drama, Acción</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Squid Game]"
+                  title="Squid Game Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal21" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal21')">×</span>
+          <img src="imagenes/series/strangers.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Stranger Things</h2>
+              <p><strong>Año:</strong> 2016-presente · <strong>Duración:</strong> 4 temporadas (aprox. 42-98 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 15+</p>
+              <p>
+                  Cuando un niño desaparece, sus amigos, la familia y la policía local se ven envueltos en una serie de eventos misteriosos que involucran experimentos secretos del gobierno y una peligrosa dimensión alternativa.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Millie Bobby Brown, Finn Wolfhard, Winona Ryder
+              </p>
+              <p><strong>Géneros:</strong> Ciencia ficción, Terror, Drama</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Stranger Things]"
+                  title="Stranger Things Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal22" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal22')">×</span>
+          <img src="imagenes/series/Tronos.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>Juego de Tronos</h2>
+              <p><strong>Año:</strong> 2011-2019 · <strong>Duración:</strong> 8 temporadas (aprox. 50-82 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  En la tierra de Westeros, nueve familias nobles luchan por el control del Trono de Hierro, en una épica historia de traición, ambición, amor y guerra.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Emilia Clarke, Kit Harington, Sophie Turner
+              </p>
+              <p><strong>Géneros:</strong> Fantasía, Drama, Acción</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de Juego de Tronos]"
+                  title="Juego de Tronos Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal23" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal23')">×</span>
+          <img src="imagenes/series/walking.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>The Walking Dead</h2>
+              <p><strong>Año:</strong> 2010-2022 · <strong>Duración:</strong> 11 temporadas (aprox. 42-67 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  Un grupo de supervivientes lucha por mantenerse con vida en un mundo postapocalíptico invadido por zombis ("caminantes").
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Andrew Lincoln, Norman Reedus, Melissa McBride
+              </p>
+              <p><strong>Géneros:</strong> Terror, Drama, Thriller</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de The Walking Dead]"
+                  title="The Walking Dead Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  
+  <div id="modal24" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal24')">×</span>
+          <img src="imagenes/series/Witcher.jpg" alt="Poster" class="modal-img" />
+          <div class="modal-info">
+              <h2>The Witcher</h2>
+              <p><strong>Año:</strong> 2019-presente · <strong>Duración:</strong> 3 temporadas (aprox. 47-67 min/episodio)</p>
+              <p><strong>Clasificación:</strong> 18+</p>
+              <p>
+                  Geralt de Rivia, un cazador de monstruos mutante, viaja por un mundo de magia y monstruos en busca de su destino.
+              </p>
+              <p>
+                  <strong>Reparto:</strong> Henry Cavill, Anya Chalotra, Freya Allan
+              </p>
+              <p><strong>Géneros:</strong> Fantasía, Acción, Aventura</p>
+              <iframe
+                  width="100%"
+                  height="250"
+                  src="[Enlace del tráiler de The Witcher]"
+                  title="The Witcher Trailer"
+                  frameborder="0"
+                  allowfullscreen
+              ></iframe>
+          </div>
+      </div>
+  </div>
+  <div id="modal25" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal25')">×</span>
+        <img src="imagenes/reallity/camp.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Battle Camp</h2>
+            <p><strong>Año:</strong> 2023 · <strong>Duración:</strong> 1 temporada (8 episodios, aprox. 40-50 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Un grupo de concursantes se enfrenta a desafíos físicos y mentales en la naturaleza salvaje, luchando por un premio en efectivo.
+            </p>
+            <p>
+                <strong>Reparto:</strong> No se dispone de información detallada del reparto principal.
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Competencia, Aventura</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/j19uQ5f_6kQ?si=4G-GIKM5f9f84pW-"
+                title="Battle Camp Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
     </div>
+</div>
+
+<div id="modal26" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal26')">×</span>
+        <img src="imagenes/reallity/circle.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>The Circle</h2>
+            <p><strong>Año:</strong> 2020-presente · <strong>Duración:</strong> 6 temporadas (variable, aprox. 30-60 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Concursantes viven aislados en apartamentos y se comunican solo a través de una plataforma de redes sociales, donde pueden ser ellos mismos o inventar un personaje para ganar popularidad y un premio en efectivo.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Michelle Buteau (presentadora)
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Competencia, Redes Sociales</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/94H49yx4ykQ?si=t-1j4c51F81-o9-F"
+                title="The Circle Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal27" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal27')">×</span>
+        <img src="imagenes/reallity/fakes.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Fakes</h2>
+            <p><strong>Año:</strong> 2022 · <strong>Duración:</strong> 1 temporada (10 episodios, aprox. 20-30 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Dos mejores amigas adolescentes construyen un imperio de identificaciones falsas, pero sus vidas se complican cuando su negocio se vuelve demasiado exitoso. (Nota: Aunque el nombre sugiere reality, es una serie de ficción).
+            </p>
+            <p>
+                <strong>Reparto:</strong> Emilija Baranac, Jennifer Tong, Richard Harmon
+            </p>
+            <p><strong>Géneros:</strong> Comedia, Crimen, Drama</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/yALT9me8j4M?si=aW0MCj4387mG-G-v"
+                title="Fakes Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal28" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal28')">×</span>
+        <img src="imagenes/reallity/georgina.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Soy Georgina</h2>
+            <p><strong>Año:</strong> 2022-presente · <strong>Duración:</strong> 2 temporadas (6 episodios/temporada, aprox. 40-50 min/episodio)</p>
+            <p><strong>Clasificación:</strong> Todos los públicos</p>
+            <p>
+                Un vistazo a la vida de Georgina Rodríguez, modelo, influencer y pareja de Cristiano Ronaldo.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Georgina Rodríguez
+            </p>
+            <p><strong>Géneros:</strong> Documental, Reality-TV, Biográfico</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/4r_jWj81j1Q?si=q45_1U4k9V4ED-wz"
+                title="Soy Georgina Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal29" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal29')">×</span>
+        <img src="imagenes/reallity/home.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Hack My Home</h2>
+            <p><strong>Año:</strong> 2023 · <strong>Duración:</strong> 1 temporada (8 episodios, aprox. 30-40 min/episodio)</p>
+            <p><strong>Clasificación:</strong> Todos los públicos</p>
+            <p>
+                Expertos en diseño encuentran soluciones creativas y asequibles para transformar hogares y maximizar el espacio.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Brooks Atwood, Mikel Welch, Ati Williams
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Estilo de vida, Reformas</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/m_z1yQAEgwM?si=jM-n60HYl4452H0q"
+                title="Hack My Home Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal30" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal30')">×</span>
+        <img src="imagenes/reallity/hot.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Too Hot to Handle</h2>
+            <p><strong>Año:</strong> 2020-presente · <strong>Duración:</strong> 5 temporadas (variable, aprox. 25-40 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Jóvenes atractivos llegan a un paraíso tropical creyendo que tendrán un verano de sexo y diversión, pero una regla lo cambia todo: no pueden tener ningún contacto íntimo si quieren ganar el gran premio.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Lana (anfitriona virtual)
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Romance, Competencia</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/3hN4amu-G2M?si=xJ44JT_K2sJ0j5vH"
+                title="Too Hot to Handle Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal31" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal31')">×</span>
+        <img src="imagenes/reallity/match.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Perfect Match</h2>
+            <p><strong>Año:</strong> 2023 · <strong>Duración:</strong> 1 temporada (12 episodios, aprox. 30-45 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Solteros de diferentes reality shows de Netflix se reúnen en una villa tropical para encontrar el amor y formar la pareja perfecta.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Nick Lachey (presentador)
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Romance, Competencia</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/W4_4q_YSK-Y?si=F6w-a91-V404i9_q"
+                title="Perfect Match Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal32" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal32')">×</span>
+        <img src="imagenes/reallity/mole.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>The Mole</h2>
+            <p><strong>Año:</strong> 2022-presente · <strong>Duración:</strong> 1 temporada (10 episodios, aprox. 40-50 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 13+</p>
+            <p>
+                Un grupo de concursantes trabaja en equipo para completar desafíos y ganar dinero, pero uno de ellos es un "topo" saboteando sus esfuerzos. Deben descubrir quién es el topo para ganar el premio final.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Alex Wagner (presentadora)
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Competencia, Misterio</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/QLNe4voJ81U?si=r4W_c20Y6L9q9y8i"
+                title="The Mole Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal33" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal33')">×</span>
+        <img src="imagenes/reallity/perfect.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>The Perfect Couple</h2>
+            <p><strong>Año:</strong> 2024 · <strong>Duración:</strong> 1 temporada (6 episodios, aprox. 40-50 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                En un resort de lujo, varias parejas se enfrentan a desafíos para demostrar que son la pareja perfecta y ganar un premio en efectivo.
+            </p>
+            <p>
+                <strong>Reparto:</strong> No se dispone de información detallada del reparto principal.
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Romance, Competencia</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/G-6XCnZXe_k?si=11t0444F9o709d4X"
+                title="The Perfect Couple Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal34" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal34')">×</span>
+        <img src="imagenes/reallity/quereye.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Queer Eye 7</h2>
+            <p><strong>Año:</strong> 2023 · <strong>Duración:</strong> 1 temporada (7 episodios, aprox. 45-55 min/episodio)</p>
+            <p><strong>Clasificación:</strong> Todos los públicos</p>
+            <p>
+                Los Fab Five regresan para transformar la vida de héroes cotidianos, ofreciendo consejos en moda, cultura, diseño, comida y bienestar.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Antoni Porowski, Tan France, Karamo Brown, Bobby Berk, Jonathan Van Ness
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Estilo de vida, Transformación</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/94n_VOUvD44?si=3n1zYlT170wUj-2M"
+                title="Queer Eye 7 Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal35" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal35')">×</span>
+        <img src="imagenes/reallity/sunset.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+            <h2>Selling Sunset Season 6</h2>
+            <p><strong>Año:</strong> 2023 · <strong>Duración:</strong> 1 temporada (11 episodios, aprox. 30-40 min/episodio)</p>
+            <p><strong>Clasificación:</strong> 16+</p>
+            <p>
+                Agentes de bienes raíces de alto standing del Oppenheim Group venden lujosas propiedades en Los Ángeles. La temporada 6 sigue sus vidas profesionales y personales llenas de drama.
+            </p>
+            <p>
+                <strong>Reparto:</strong> Jason Oppenheim, Brett Oppenheim, Chrishell Stause, Mary Fitzgerald, Heather Rae El Moussa, Amanza Smith, Emma Hernan, Chelsea Lazkani, Nicole Young
+            </p>
+            <p><strong>Géneros:</strong> Reality-TV, Estilo de vida, Inmobiliaria</p>
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/O6Qj1Jj16zY?si=yY_qR41s4W498p-i"
+                title="Selling Sunset Season 6 Trailer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="modal36" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal36')">×</span>
+      <img src="imagenes/reallity/Unreal.jpg" alt="Poster" class="modal-img" />
+      <div class="modal-info">
+          <h2>Unreal</h2>
+          <p><strong>Año:</strong> 2015-2018 · <strong>Duración:</strong> 4 temporadas (10 episodios/temporada, aprox. 42-45 min/episodio)</p>
+          <p><strong>Clasificación:</strong> 16+</p>
+          <p>
+              Una mirada oscura y satírica detrás de las cámaras de un popular reality show de citas, mostrando la manipulación y el drama que los productores crean para aumentar la audiencia. (Nota: Aunque el nombre sugiere reality, es una serie de ficción).
+          </p>
+          <p>
+              <strong>Reparto:</strong> Shiri Appleby, Constance Zimmer, Craig Bierko
+          </p>
+          <p><strong>Géneros:</strong> Drama, Ficción, Satírico</p>
+          <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/watch?v=eW57mKCM3rM"
+              title="Unreal Trailer"
+              frameborder="0"
+              allowfullscreen
+          ></iframe>
+      </div>
+  </div>
+</div>
 
     <!-- Scripts -->
     <script>
@@ -590,6 +1222,33 @@
           }
         });
       };
+
+      document.addEventListener('DOMContentLoaded', function() {
+  const netflixCarousel = document.getElementById('netflixCarousel');
+  const movieInfoElements = document.querySelectorAll('[id^="movieInfo"]');
+  let timeoutId;
+
+  function hideMovieInfo() {
+    movieInfoElements.forEach(element => {
+      element.style.display = 'none';
+    });
+  }
+
+  function resetTimeout() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(hideMovieInfo, 10000);
+  }
+
+  netflixCarousel.addEventListener('slid.bs.carousel', function() {
+    movieInfoElements.forEach(element => {
+      element.style.display = 'block'; // Aseguramos que la info sea visible al cambiar de slide
+    });
+    resetTimeout();
+  });
+
+  // Inicializar el temporizador para el primer elemento activo
+  resetTimeout();
+});
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
