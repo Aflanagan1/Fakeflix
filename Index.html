@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakeflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-danger" href="#">Fakeflix</a>
+    </nav>
+
+    <!-- Carrusel superior -->
+    <div id="netflixCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <iframe
+            width="100%"
+            height="600px"
+            src="https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+            title="Trailer Ant-man"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="carousel-item">
+          <iframe
+            width="100%"
+            height="600px"
+            src="https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+            title="Trailer Avatar"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="carousel-item">
+          <iframe
+            width="100%"
+            height="600px"
+            src="https://www.youtube.com/embed/TTgk_iT8Uts?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+            title="Trailer Dune"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Botones laterales -->
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#netflixCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#netflixCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Carruseles horizontales -->
+    <div class="container-fluid">
+      <h4 class="mt-4">Películas</h4>
+      <div class="scrolling-wrapper">
+        <img
+          class="card"
+          src="imagenes/Peliculas/antman.jpg"
+          onclick="openModal('modal1')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/avatar.jpg"
+          onclick="openModal('modal2')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/dune.jpg"
+          onclick="openModal('modal3')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/ET.jpg"
+          onclick="openModal('modal4')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/fast.jpg"
+          onclick="openModal('modal5')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/Fiction.jpg"
+          onclick="openModal('modal6')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/Harry.jpg"
+          onclick="openModal('modal7')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/it.jpg"
+          onclick="openModal('modal8')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/joker.jpg"
+          onclick="openModal('modal9')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/padrino.jpg"
+          onclick="openModal('modal10')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/Project.jpg"
+          onclick="openModal('modal11')"
+        />
+        <img
+          class="card"
+          src="imagenes/Peliculas/regreso.jpg"
+          onclick="openModal('modal12')"
+        />
+      </div>
+
+      <h4 class="mt-4">Series</h4>
+      <div class="scrolling-wrapper">
+        <img class="card" src="imagenes/series/Alive.jpg" />
+        <img class="card" src="imagenes/series/Arcane.jpg" />
+        <img class="card" src="imagenes/series/blinders.jpg" />
+        <img class="card" src="imagenes/series/Dark.jpg" />
+        <img class="card" src="imagenes/series/friends.jpg" />
+        <img class="card" src="imagenes/series/gambito.jpg" />
+        <img class="card" src="imagenes/series/Los100.jpg" />
+        <img class="card" src="imagenes/series/Squid.jpg" />
+        <img class="card" src="imagenes/series/strangers.jpg" />
+        <img class="card" src="imagenes/series/Tronos.jpg" />
+        <img class="card" src="imagenes/series/walking.jpg" />
+        <img class="card" src="imagenes/series/Witcher.jpg" />
+      </div>
+
+      <h4 class="mt-4">Un poco de realidad</h4>
+      <div class="scrolling-wrapper">
+        <img class="card" src="imagenes/reallity/camp.jpg" />
+        <img class="card" src="imagenes/reallity/circle.jpg" />
+        <img class="card" src="imagenes/reallity/fakes.jpg" />
+        <img class="card" src="imagenes/reallity/georgina.jpg" />
+        <img class="card" src="imagenes/reallity/home.jpg" />
+        <img class="card" src="imagenes/reallity/hot.jpg" />
+        <img class="card" src="imagenes/reallity/match.jpg" />
+        <img class="card" src="imagenes/reallity/mole.jpg" />
+        <img class="card" src="imagenes/reallity/perfect.jpg" />
+        <img class="card" src="imagenes/reallity/quereye.jpg" />
+        <img class="card" src="imagenes/reallity/sunset.jpg" />
+        <img class="card" src="imagenes/reallity/Unreal.jpg" />
+      </div>
+    </div>
+    <!-- Modal1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img
+          src="imagenes/Peliculas/antman.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Ant-Man</h2>
+        <p><strong>Año:</strong> 2015 · <strong>Duración:</strong> 1h 57min</p>
+        <p><strong>Clasificación:</strong> 13+</p>
+        <p>
+          Scott Lang, un ladrón reformado, debe ayudar a su mentor, el Dr. Hank Pym, a proteger la tecnología del traje de Ant-Man de caer en las manos equivocadas.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Paul Rudd, Michael Douglas, Evangeline Lilly
+        </p>
+        <p><strong>Géneros:</strong> Ciencia ficción, Acción, Aventura</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/TcMBFSGVi1c"
+            title="Trailer Ant-man"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img
+          src="imagenes/Peliculas/avatar.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Avatar</h2>
+        <p><strong>Año:</strong> 2009 · <strong>Duración:</strong> 2h 42min</p>
+        <p><strong>Clasificación:</strong> 13+</p>
+        <p>
+          Un ex-marine parapléjico es enviado al planeta Pandora en una misión única, pero se debate entre seguir las órdenes y proteger el mundo que siente como suyo.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Sam Worthington, Zoe Saldana, Sigourney Weaver
+        </p>
+        <p><strong>Géneros:</strong> Ciencia ficción, Acción, Aventura</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/5PSNL1qE6VY"
+            title="Trailer Avatar"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img src="imagenes/Peliculas/dune.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+          <h2>Dune</h2>
+          <p><strong>Año:</strong> 2021 · <strong>Duración:</strong> 2h 35min</p>
+          <p><strong>Clasificación:</strong> 13+</p>
+          <p>
+            El joven Paul Atreides viaja al peligroso planeta Arrakis para asegurar el futuro de su familia y su pueblo.
+          </p>
+          <p>
+            <strong>Reparto:</strong> Timothée Chalamet, Rebecca Ferguson, Oscar Isaac
+          </p>
+          <p><strong>Géneros:</strong> Ciencia ficción, Aventura, Drama</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/TTgk_iT8Uts"
+            title="Trailer Dune"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal4 -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img src="imagenes/Peliculas/ET.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+          <h2>E.T. el extraterrestre</h2>
+        <p><strong>Año:</strong> 1982 · <strong>Duración:</strong> 1h 55min</p>
+        <p><strong>Clasificación:</strong> Todos los públicos</p>
+        <p>
+          Un niño solitario se hace amigo de un extraterrestre varado en la Tierra y lo ayuda a encontrar el camino a casa mientras evita que el gobierno lo capture.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Henry Thomas, Drew Barrymore, Dee Wallace
+        </p>
+        <p><strong>Géneros:</strong> Ciencia ficción, Aventura, Familiar</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/F8QgAwuxXtg"
+            title="Trailer E.T"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal5 -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="imagenes/Peliculas/fast.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+          <h2>The Fast and the Furious: Tokyo Race</h2>
+          <p><strong>Año:</strong> 2006 · <strong>Duración:</strong> 1h 44min</p>
+          <p><strong>Clasificación:</strong> 13+</p>
+          <p>
+            Un joven problemático es enviado a Tokio para vivir con su padre, donde se introduce en el mundo de las carreras callejeras ilegales.
+          </p>
+          <p>
+            <strong>Reparto:</strong> Lucas Black, Sung Kang, Bow Wow
+          </p>
+          <p><strong>Géneros:</strong> Acción, Crimen, Suspense</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/SOwVYhLKZEU"
+            title="Trailer Fast & Furious Toky Drift"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal6 -->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <img
+          src="imagenes/Peliculas/Fiction.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Pulp Fiction</h2>
+        <p><strong>Año:</strong> 1994 · <strong>Duración:</strong> 2h 34min</p>
+        <p><strong>Clasificación:</strong> 18+</p>
+        <p>
+          Las vidas de varios criminales de Los Ángeles se entrelazan en una historia de violencia y redención.
+        </p>
+        <p>
+          <strong>Reparto:</strong> John Travolta, Uma Thurman, Samuel L. Jackson
+        </p>
+        <p><strong>Géneros:</strong> Crimen, Drama, Suspense</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/auCgsj0MV-M"
+            title="Trailer Pulp Fiction"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal7 -->
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <img
+          src="imagenes/Peliculas/Harry.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Harry Potter y la piedra filosofal</h2>
+        <p><strong>Año:</strong> 2001 · <strong>Duración:</strong> 2h 32min</p>
+        <p><strong>Clasificación:</strong> Todos los públicos</p>
+        <p>
+          Un niño huérfano descubre en su undécimo cumpleaños que es un mago y es invitado a asistir a la Escuela de Magia y Hechicería Hogwarts.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Daniel Radcliffe, Rupert Grint, Emma Watson
+        </p>
+        <p><strong>Géneros:</strong> Fantasía, Aventura, Familiar</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/WE4AJuIvG1Y"
+            title="Trailer Harry Potter y la piedra filosofal"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal8 -->
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <img src="imagenes/Peliculas/it.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+          <h2>It</h2>
+        <p><strong>Año:</strong> 2017 · <strong>Duración:</strong> 2h 15min</p>
+        <p><strong>Clasificación:</strong> 16+</p>
+        <p>
+          Un grupo de niños en Derry, Maine, se une para investigar la misteriosa desaparición de otros niños, enfrentándose a un malvado payaso llamado Pennywise.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Bill Skarsgård, Jaeden Martell, Finn Wolfhard
+        </p>
+        <p><strong>Géneros:</strong> Terror, Suspense, Drama</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/9jhtucvduSw"
+            title="Trailer IT"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal9 -->
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal9')">&times;</span>
+        <img
+          src="imagenes/Peliculas/joker.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Joker</h2>
+        <p><strong>Año:</strong> 2019 · <strong>Duración:</strong> 2h 2min</p>
+        <p><strong>Clasificación:</strong> 18+</p>
+        <p>
+          La historia de origen del Joker, un comediante fallido que es llevado al borde de la locura y se convierte en un criminal psicópata en Gotham City.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Joaquin Phoenix, Robert De Niro, Zazie Beetz
+        </p>
+        <p><strong>Géneros:</strong> Crimen, Drama, Suspense</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/ygUHhImN98w"
+            title="Trailer The Joker"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal10 -->
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <img
+          src="imagenes/Peliculas/padrino.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>El padrino</h2>
+        <p><strong>Año:</strong> 1972 · <strong>Duración:</strong> 2h 55min</p>
+        <p><strong>Clasificación:</strong> 18+</p>
+        <p>
+          La saga de la familia Corleone, una poderosa familia de la mafia en Nueva York, y el ascenso de Michael Corleone al poder.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Marlon Brando, Al Pacino, James Caan
+        </p>
+        <p><strong>Géneros:</strong> Crimen, Drama</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/gCVj1LeYnsc"
+            title="Trailer El Padrino"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal11 -->
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal11')">&times;</span>
+        <img
+          src="imagenes/Peliculas/Project.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Project X</h2>
+        <p><strong>Año:</strong> 2012 · <strong>Duración:</strong> 1h 28min</p>
+        <p><strong>Clasificación:</strong> 16+</p>
+        <p>
+          Tres estudiantes de último año de secundaria planean dar una fiesta para hacerse populares, pero la situación se sale de control rápidamente.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Thomas Mann, Oliver Cooper, Jonathan Daniel Brown
+        </p>
+        <p><strong>Géneros:</strong> Comedia</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/fMJ4IBnU0Ks"
+            title="Trailer Project X"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal12 -->
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal12')">&times;</span>
+        <img
+          src="imagenes/Peliculas/regreso.jpg"
+          alt="Poster"
+          class="modal-img"
+        />
+        <div class="modal-info">
+          <h2>Regreso al futuro</h2>
+        <p><strong>Año:</strong> 1985 · <strong>Duración:</strong> 1h 56min</p>
+        <p><strong>Clasificación:</strong> Todos los públicos</p>
+        <p>
+          Un adolescente es enviado accidentalmente al año 1955 en un coche DeLorean convertido en máquina del tiempo y debe asegurarse de que sus padres se enamoren para asegurar su propia existencia.
+        </p>
+        <p>
+          <strong>Reparto:</strong> Michael J. Fox, Christopher Lloyd, Lea Thompson
+        </p>
+        <p><strong>Géneros:</strong> Ciencia ficción, Aventura, Comedia</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/NDS1myoYUzs"
+            title="Trailer Regreso al futuro"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal13 -->
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img src="imagenes/avengers.jpg" alt="Poster" class="modal-img" />
+        <div class="modal-info">
+          <h2>Avengers: Endgame</h2>
+          <p><strong>Año:</strong> 2019 · <strong>Duración:</strong> 3h 2min</p>
+          <p><strong>Clasificación:</strong> 13+</p>
+          <p>
+            Thanos ha destruido el universo, y los Vengadores deben reunir
+            fuerzas para revertirlo.
+          </p>
+          <p>
+            <strong>Reparto:</strong> Robert Downey Jr., Chris Evans, Scarlett
+            Johansson
+          </p>
+          <p><strong>Géneros:</strong> Ciencia ficción, Acción</p>
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/TcMBFSGVi1c"
+            title="Avengers Trailer"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      function closeModal(id) {
+        const modal = document.getElementById(id);
+        modal.style.display = "none";
+
+        // Detener el video reiniciando su src
+        const iframe = modal.querySelector("iframe");
+        if (iframe) {
+          const src = iframe.src;
+          iframe.src = ""; // Limpia el src
+          iframe.src = src; // Lo vuelve a establecer (reinicia el video)
+        }
+      }
+
+      // Cerrar modal con clic fuera
+      window.onclick = function (event) {
+        document.querySelectorAll(".modal").forEach((modal) => {
+          if (event.target === modal) {
+            closeModal(modal.id); // Usa la misma lógica de cerrar
+          }
+        });
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
